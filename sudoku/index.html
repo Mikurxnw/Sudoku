@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudd</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="theme-mode">
+    <header>
+      <h1>Play sudoku online!</h1>
+      <div class="change-theme">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div id="setup">
+        <div id="diff">
+          <h3>Choose difficulty:</h3>
+          <label
+            ><input
+              id="diff-1"
+              type="radio"
+              name="diff"
+              value="easy"
+              checked
+            />Easy</label
+          >
+          <label
+            ><input
+              id="diff-2"
+              type="radio"
+              name="diff"
+              value="medium"
+            />Medium</label
+          >
+          <label
+            ><input
+              id="diff-3"
+              type="radio"
+              name="diff"
+              value="hard"
+            />Hard</label
+          >
+        </div>
+        <div id="time">
+          <h3>Choose time:</h3>
+          <label
+            ><input
+              id="time-1"
+              type="radio"
+              name="time"
+              value="three"
+              checked
+            />3 min</label
+          >
+          <label
+            ><input id="time-2" type="radio" name="time" value="five" />5
+            min</label
+          >
+          <label
+            ><input id="time-3" type="radio" name="time" value="ten" />10
+            min</label
+          >
+        </div>
+      </div>
+      <button id="start-btn">Create new game</button>
+      <button id="back-btn" class="hidden">Go back to main page</button>
+    </header>
+    <section>
+      <div id="stats">
+        <p id="timer" class="hidden">0</p>
+        <p id="lives" class="hidden">0</p>
+      </div>
+      <div id="game">
+        <div id="board" class="hidden"></div>
+        <div id="numbers" class="hidden"></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
